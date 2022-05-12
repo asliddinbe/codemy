@@ -1,0 +1,8 @@
+.card {
+    background-color: #F8F9FC ;
+    padding: 45px 136px 0 136px;
+    display: grid;
+    grid-template-columns: repeat(2, 279px);
+    grid-row-gap: 16px;
+    grid-column-gap: 16px;
+  }

@@ -1,0 +1,37 @@
+.h1 span{
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    font-size: 120px;
+    font-weight: 900;
+    animation: animate 1s linear infinite;
+}
+.h1 span:nth-child(1){
+    animation-delay: 0.10s;
+}
+.h1 span:nth-child(2){
+    animation-delay: 0.20s;
+}
+.h1 span:nth-child(3){
+    animation-delay: 0.35s;
+}
+
+@keyframes animate {
+    0% , 100%{
+        color: #fff;
+        filter: blur(2px);
+        text-shadow: 0 0 10px #2bff00,
+         0 0 20px #f09e07,
+         0 0 40px #ff00f2,
+         0 0 80px #ff0000,
+         0 0 120px #2f00ff,
+         0 0 200px #15ff00,
+         0 0 300px #ffd000,
+         0 0 400px #00b3ff;
+    }
+    5% ,95%{
+        color: #111;
+        filter: blur(0px);
+        text-shadow: none ;
+    }
+}
